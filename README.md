@@ -64,7 +64,7 @@ print(type([1, 2, 3]))           # List
 print(type({'name': 'Asabeneh'})) # Dictionary
 print(type({9.8, 3.14, 2.7}))    # Set
 print(type((9.8, 3.14, 2.7)))    # Tuple
-
+```
 
 ### Day 2: Variables and built-in functions
 **Topics Covered:**
@@ -87,6 +87,7 @@ print("Age: ", age)
 print("Married:", False)
 print("Skills: ", skills)
 print("Person information: ", person_info)
+```
 
 ## 🛠️ Setup & Running
 
