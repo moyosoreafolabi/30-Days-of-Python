@@ -7,7 +7,7 @@ Welcome to my repository for the **30 Days of Python** challenge! I am documenti
 | Day | Topic | Status |
 |:---:|:---|:---:|
 | **01** | **Introduction, Data Types, Comments** | ✅ |
-| 02 | Variables, Built-in Functions | ⬜ |
+| **02** | **Variables, Built-in Functions** | ✅ |
 | 03 | Operators | ⬜ |
 | 04 | Strings | ⬜ |
 | 05 | Lists | ⬜ |
@@ -65,6 +65,29 @@ print(type({'name': 'Asabeneh'})) # Dictionary
 print(type({9.8, 3.14, 2.7}))    # Set
 print(type((9.8, 3.14, 2.7)))    # Tuple
 
+
+### Day 2: Variables and built-in functions
+**Topics Covered:**
+- assigning variables 
+- printing values stored in the variables 
+- declaring multiple variables in one line
+- different data types
+- arithmetic operations 
+
+**Code Snippet:**
+```python
+# Printing the values stored in the variables
+
+print("First name", first_name)
+print("First name lenghth", len(first_name))
+print("Last name: ", len(last_name))
+print("Country: ", country)
+print("City: ",city)
+print("Age: ", age)
+print("Married:", False)
+print("Skills: ", skills)
+print("Person information: ", person_info)
+
 ## 🛠️ Setup & Running
 
 To run the code for a specific day:
@@ -76,3 +99,4 @@ To run the code for a specific day:
    
 ## 📚 Resources
 - [Official 30 Days of Python Repo](https://github.com/Asabeneh/30-Days-Of-Python)
+
