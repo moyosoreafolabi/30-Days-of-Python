@@ -66,7 +66,7 @@ print(type({9.8, 3.14, 2.7}))    # Set
 print(type((9.8, 3.14, 2.7)))    # Tuple
 ```
 
-### Day 2: Variables and built-in functions
+### Day 2: Variables
 **Topics Covered:**
 - assigning variables 
 - printing values stored in the variables 
@@ -87,6 +87,65 @@ print("Age: ", age)
 print("Married:", False)
 print("Skills: ", skills)
 print("Person information: ", person_info)
+```
+
+### Day 3: Variables
+**Topics Covered:**
+
+- Boolean
+- Operators
+- Assignment Operators
+- Arithmetic Operators:
+- Comparison Operators
+- Logical Operators 
+
+**Code Snippet:**    **Code for exercises:**
+```python
+
+# calculating the area of a rectangle
+length = 10
+width = 16
+area_of_rectangle = length * width
+print("Area of rectangle: ", area_of_rectangle)
+
+# Calculating a weight of an object
+mass = 68
+gravity = 9.81
+weight = mass * gravity
+print("weight:", weight, "N")                         # Adding unit to the weight
+
+# Calculate the density of a liquid
+mass = 68 # in Kg
+volume = 0.075 # in cubic meter
+density = mass / volume 
+print("density:", density, "Kg/m^3")                  
+
+# Write a script that prompts the user to enter hours and rate per hour. Calculate pay of the person?
+
+working_hours = int(input("Enter your working hours: "))
+hourly_rate = int(input("Enter your hourly rate: "))
+name = input("Enter your name: ")
+
+weekly_earning = working_hours * hourly_rate
+
+output = "Hello " + name + ", your weekly earning is: " + str(weekly_earning)
+print(output)
+
+# Write a script that prompts the user to enter number of years. Calculate the number of seconds a person can live. Assume a person can live hundred years
+
+years = int(input("enter number of years you have lived: "))
+seconds = years * 365 * 24 * 60 * 60
+print("You have lived for", seconds, "seconds.")   
+
+# Write a Python script that displays the following table
+# 1 1 1 1 1
+# 2 1 2 4 8
+# 3 1 3 9 27
+# 4 1 4 16 64
+# 5 1 5 25 125
+
+for i in range(1, 6):
+    print(i, 1, i, i**2, i**3)
 ```
 
 ## 🛠️ Setup & Running
