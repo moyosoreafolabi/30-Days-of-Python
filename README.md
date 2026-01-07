@@ -8,7 +8,7 @@ Welcome to my repository for the **30 Days of Python** challenge! I am documenti
 |:---:|:---|:---:|
 | **01** | **Introduction, Data Types, Comments** | ✅ |
 | **02** | **Variables, Built-in Functions** | ✅ |
-| 03 | Operators | ⬜ |
+| **03** | **Operators** | ✅ |
 | 04 | Strings | ⬜ |
 | 05 | Lists | ⬜ |
 | 06 | Tuples | ⬜ |
