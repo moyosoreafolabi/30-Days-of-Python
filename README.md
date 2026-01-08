@@ -9,7 +9,7 @@ Welcome to my repository for the **30 Days of Python** challenge! I am documenti
 | **01** | **Introduction, Data Types, Comments** | ✅ |
 | **02** | **Variables, Built-in Functions** | ✅ |
 | **03** | **Operators** | ✅ |
-| 04 | Strings | ⬜ |
+| **04** | **Strings** |✅  |
 | 05 | Lists | ⬜ |
 | 06 | Tuples | ⬜ |
 | 07 | Sets | ⬜ |
@@ -148,6 +148,64 @@ for i in range(1, 6):
     print(i, 1, i, i**2, i**3)
 ```
 
+### Day 4: Strings
+**Topics Covered:**
+
+- Creating a String
+- String Concatenation
+- Escape Sequences in Strings
+- String formatting
+- Python Strings as Sequences of Characters
+- String Methods
+
+**Code Snippet:**
+```python
+result = "Thirty" + ' ' + "Days" + ' ' + "Of" + ' ' + "Python"
+print(result)
+
+result_two = "Coding" + " " + "For" + " " + "All"
+print(result_two)
+
+company = "coding for all"
+print(company)
+print(len(company))             # checks length of string
+print(company.upper())          # changes string to uppercase
+print(company.lower())          # changes string to lowercase
+
+company = "Coding For All"
+first_word = company.split()[2]
+print(first_word)
+
+company = "coding for all"
+print(company.find("coding"))
+
+print(company.replace("coding", "Python"))     # replaces coding with python in the variable "company"
+
+statement = "You cannot end a sentence with because because because is a conjunction"
+sub_string = "because"
+print(statement.index(sub_string))          # prints first occurence of because
+print(statement.rindex(sub_string))         # prints last occurence of because
+
+statement = "You cannot end a sentence with because because because is a conjunction"
+sub_string = "because"
+print(statement.strip(sub_string))          # removes because from string
+
+
+print("Name\tAge\tCountry\tCity")           # tab spaces
+print("Moyosore\t25\tNigeria\tLagos")       # tab spaces
+
+print("I am enjoying learning Python.\nI hope you are enjoying it too.")   # shifts second sentence to the next line
+print("I am enjoying this challenge.\nI just wonder what is next.")        # likewisw
+
+radius = 10 
+area = 3.14 * radius ** 2 
+result = print(area)
+print("The area of a circle with radius 10 is :", area)
+
+libraries = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+result = " ".join(libraries)                # Returns a concatenated string
+print(result)
+```
 ## 🛠️ Setup & Running
 
 To run the code for a specific day:
