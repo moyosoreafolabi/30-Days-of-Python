@@ -10,7 +10,7 @@ Welcome to my repository for the **30 Days of Python** challenge! I am documenti
 | **02** | **Variables, Built-in Functions** | ✅ |
 | **03** | **Operators** | ✅ |
 | **04** | **Strings** |✅  |
-| 05 | Lists | ⬜ |
+| **05** | **Lists** |✅  |
 | 06 | Tuples | ⬜ |
 | 07 | Sets | ⬜ |
 | 08 | Dictionaries | ⬜ |
@@ -206,6 +206,111 @@ libraries = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
 result = " ".join(libraries)                # Returns a concatenated string
 print(result)
 ```
+
+### Day 5: Lists
+**Topics Covered:**
+
+- How to Create a List
+- Accessing List Items Using Positive Indexing
+- Accessing List Items Using Negative Indexing
+- Unpacking List Items
+- Slicing Items from a List
+- Modifying Lists
+- Checking Items in a List
+- Adding Items to a List
+- Inserting Items into a List
+- Removing Items from a List
+- Removing Items Using Pop
+- Removing Items Using Del
+- Clearing List Items
+- Copying a List
+- Joining Lists
+- Counting Items in a List
+- Finding Index of an Item
+- Reversing a List
+- Sorting List Items
+
+**Code Snippet:**
+```python
+
+days = []
+print(days)
+
+months = ["january", "february", "march", "april", "may", "june"]
+print(len(months))
+first_item = months[0]
+middle_item = months[3]
+last_item = months[5]
+print(first_item , middle_item , last_item)
+
+mixed_data_types = ["moyosore", "25", "5.5 inches", "engaged", "lagos"]
+print(mixed_data_types)
+
+it_companies = ["facebook", "google", "microsoft", "apple", "IBM", "oracle", "amazon"]
+print(it_companies)
+print(len(it_companies))
+it_companies[0] = "instagram"
+print(it_companies)
+
+it_companies.append("telegram")
+print(it_companies)
+
+it_companies.insert(3, "chatgpt")
+print(it_companies)
+
+does_exist= "instagram" in it_companies
+print(does_exist)
+
+it_companies.sort()
+print(it_companies)
+
+it_companies.sort(reverse=True)
+
+it_companies.pop(0)
+print(it_companies)
+
+it_companies.pop(-1)
+print(it_companies)
+
+del it_companies
+# print(it_companies)
+
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end = ['Node','Express', 'MongoDB']
+full_stack = front_end + back_end
+print(full_stack)
+
+full_stack.insert(5, "Python")
+print(full_stack)
+full_stack.insert(6, "SQL")
+print(full_stack)
+
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+ages.sort()
+print(ages)
+ages.sort()
+min_age = min(ages)
+max_age = max(ages)
+print(min_age)
+print(max_age)
+
+ages.append(min_age)
+ages.append(max_age)
+ages.sort()
+print(ages)
+
+average = sum(ages) / len(ages)
+print(average)
+
+age_range = max_age - min_age
+print(age_range)
+
+min_diff = abs(min_age - average)
+max_diff = abs(max_age - average)
+print(min_diff)
+print(max_diff)
+```
+
 ## 🛠️ Setup & Running
 
 To run the code for a specific day:
