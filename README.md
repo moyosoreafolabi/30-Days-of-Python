@@ -12,7 +12,7 @@ Welcome to my repository for the **30 Days of Python** challenge! I am documenti
 | **04** | **Strings** |✅  |
 | **05** | **Lists** |✅  |
 | **06** | **Tuples** |✅  |
-| 07 | Sets | ⬜ |
+| **07** | **Sets** | ✅ |
 | 08 | Dictionaries | ⬜ |
 | 09 | Conditionals | ⬜ |
 | 10 | Loops | ⬜ |
@@ -360,6 +360,50 @@ print(item)
 
 del food_stuff
 print(food_stuff)  # this will raise an error since food_stuff has been deleted
+```
+
+### Day 7: Sets
+**Topics Covered:**
+
+- Creating a Set
+- Getting Set's Length
+- Accessing Items in a Set
+- Checking an Item
+- Adding Items to a Set
+- Removing Items from a Set
+- Clearing Items in a Set
+- Deleting a Set
+- Converting List to Set
+- Joining Sets
+- Finding Intersection Items
+- Checking Subset and Super Set
+- Checking the Difference Between Two Sets
+- Finding Symmetric Difference Between Two Sets
+- Joining Sets
+
+**Code Snippet:**
+```python
+
+whole_numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+even_numbers = {0, 2, 4, 6, 8, 10}
+whole_numbers.difference(even_numbers) # {1, 3, 5, 7, 9}
+
+python = {'p', 'y', 't', 'o','n'}
+dragon = {'d', 'r', 'a', 'g', 'o','n'}
+python.difference(dragon)     # {'p', 'y', 't'} 
+dragon.difference(python)     # {'d', 'r', 'a', 'g'}
+
+it_companies = {"facebook", "google", "microsoft", "apple", "IBM", "oracle", "amazon"}
+print(len(it_companies))
+it_companies.add("twitter")
+print(it_companies)
+
+extra_companies = {"whatsapp", "apple", "netflix"}
+it_companies.update(extra_companies)
+print(it_companies)
+
+it_companies.remove("whatsapp")
+print(it_companies)
 ```
 
 ## 🛠️ Setup & Running
