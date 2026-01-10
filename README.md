@@ -11,7 +11,7 @@ Welcome to my repository for the **30 Days of Python** challenge! I am documenti
 | **03** | **Operators** | ✅ |
 | **04** | **Strings** |✅  |
 | **05** | **Lists** |✅  |
-| 06 | Tuples | ⬜ |
+| **06** | **Tuples** |✅  |
 | 07 | Sets | ⬜ |
 | 08 | Dictionaries | ⬜ |
 | 09 | Conditionals | ⬜ |
@@ -309,6 +309,57 @@ min_diff = abs(min_age - average)
 max_diff = abs(max_age - average)
 print(min_diff)
 print(max_diff)
+```
+
+### Day 6: Tuples
+**Topics Covered:**
+
+- Creating a Tuple
+- Tuple length
+- Accessing Tuple Items
+- Slicing tuples
+- Changing Tuples to Lists
+- Checking an Item in a Tuple
+- Joining Tuples
+- Deleting Tuples
+
+**Code Snippet:**
+```python
+
+empty_tuple = ()
+sibs = ("Doyin", "Dayo", "Tunde", "Damola")
+print(sibs)
+print(len(sibs))   
+family_members = list(sibs)
+family_members[0] = "kehinde"
+family_members[1] = "joseph"
+print(family_members)
+
+fruits = ('banana', 'orange', 'mango', 'lemon')
+vegetables = ('Tomato', 'Potato', 'Cabbage','Onion', 'Carrot')
+animal_products = ("milk", "cheese", "meat", "bacon")
+food_stuff = fruits + vegetables + animal_products
+print(animal_products)
+
+# Print the lists and it length
+print('Fruits:', fruits)
+print('Number of fruits:', len(fruits))
+print('Vegetables:', vegetables)
+print('Number of vegetables:', len(vegetables))
+print('Animal products:',animal_products)
+print('Number of animal products:', len(animal_products))
+print('Food stuff:', food_stuff)
+print('Number of food items:', len(food_stuff))
+
+
+food_stuff_lt = list(food_stuff)
+print(food_stuff_lt)
+
+item = food_stuff[2]
+print(item)
+
+del food_stuff
+print(food_stuff)  # this will raise an error since food_stuff has been deleted
 ```
 
 ## 🛠️ Setup & Running
