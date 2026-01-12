@@ -13,7 +13,7 @@ Welcome to my repository for the **30 Days of Python** challenge! I am documenti
 | **05** | **Lists** |✅  |
 | **06** | **Tuples** |✅  |
 | **07** | **Sets** | ✅ |
-| 08 | Dictionaries | ⬜ |
+| **08** | **Dictionaries** | ✅ |
 | 09 | Conditionals | ⬜ |
 | 10 | Loops | ⬜ |
 | 11 | Functions | ⬜ |
@@ -404,6 +404,59 @@ print(it_companies)
 
 it_companies.remove("whatsapp")
 print(it_companies)
+```
+
+### Day 8: Dictionaries
+**Topics Covered:**
+
+- Creating a Dictionary
+- Dictionary Length
+- Accessing Dictionary Items
+- Adding Items to a Dictionary
+- Modifying Items in a Dictionary
+- Checking Keys in a Dictionary
+- Removing Key and Value Pairs from a Dictionary
+- Changing Dictionary to a List of Items
+- Clearing a Dictionary
+- Deleting a Dictionary
+- Copy a Dictionary
+- Getting Dictionary Keys as a List
+- Getting Dictionary Values as a List
+
+**Code Snippet:**
+```python
+
+student = {
+        "first_name":"Paige",
+        "last_name":"Greene",
+        "gender":"female",
+        "age":22,
+        "marital status":"single",
+        "skills":["guitar", "singing", "reading"],
+        "country":"America",
+        "city":"Louisiana",
+        "address":"nyu",
+          
+        }
+
+print(student)
+print(len(student))
+print(student["skills"])
+
+student["skills"].append("driving")
+print(student)
+
+keys = student.keys()
+print(keys)
+
+values = student.values()
+print(values)
+
+print(student.items())
+print(student)
+
+print(student.pop("last_name"))
+print(student.clear())
 ```
 
 ## 🛠️ Setup & Running
