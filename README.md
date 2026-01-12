@@ -14,7 +14,7 @@ Welcome to my repository for the **30 Days of Python** challenge! I am documenti
 | **06** | **Tuples** |✅  |
 | **07** | **Sets** | ✅ |
 | **08** | **Dictionaries** | ✅ |
-| 09 | Conditionals | ⬜ |
+| **09** | **Conditionals** | ✅  |
 | 10 | Loops | ⬜ |
 | 11 | Functions | ⬜ |
 | 12 | Modules | ⬜ |
@@ -457,6 +457,50 @@ print(student)
 
 print(student.pop("last_name"))
 print(student.clear())
+```
+
+### Day 9: Conditionals
+**Topics Covered:**
+
+- If Condition
+- If Else
+- If Elif Else
+- Short Hand
+- Nested Conditions
+- If Condition and Logical Operators
+- If and Or Logical Operators
+
+**Code Snippet:**
+```python
+
+age = int(input("enter your age:"))
+if age >= 18: 
+    print("You are old enough to drive")
+else:
+     print("You need 3 more years to learn to drive")
+
+my_age = int(input("enter your age:"))
+your_age = int(input("enter your age:"))
+if my_age > your_age:
+    print("I am older than you")
+elif my_age < your_age:
+     print("You appear to be older. my bad")
+else:
+     print("we are age mates!")
+
+
+month = input("Enter the month you are in: ").lower()
+
+if month in ("september", "october", "november"):
+    print("The season is autumn")
+elif month in ("december", "january", "february"):
+    print("The season is winter")
+elif month in ("march", "april", "may"):
+    print("The season is spring")
+elif month in ("june", "july", "august"):
+    print("The season is summer")
+else:
+    print("Invalid month")
 ```
 
 ## 🛠️ Setup & Running
