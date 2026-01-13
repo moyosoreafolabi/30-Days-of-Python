@@ -15,7 +15,7 @@ Welcome to my repository for the **30 Days of Python** challenge! I am documenti
 | **07** | **Sets** | ✅ |
 | **08** | **Dictionaries** | ✅ |
 | **09** | **Conditionals** | ✅  |
-| 10 | Loops | ⬜ |
+| **10** | **Loops** | ✅ |
 | 11 | Functions | ⬜ |
 | 12 | Modules | ⬜ |
 | 13 | List Comprehension | ⬜ |
@@ -501,6 +501,56 @@ elif month in ("june", "july", "august"):
     print("The season is summer")
 else:
     print("Invalid month")
+```
+### Day 10: Loops
+**Topics Covered:**
+
+- While Loop
+- Break and Continue - Part 1
+- For Loop
+- Break and Continue - Part 2
+- The Range Function
+- Nested For Loop
+- For Else
+- Pass
+
+**Code Snippet:**
+```python
+
+numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+for number in numbers:
+    print(number)
+
+lst = ['Python', 'Numpy','Pandas','Django', 'Flask'] 
+for lst in lst:
+    print(lst)
+
+total = 0
+
+for i in range(101):  # 0 to 100 inclusive
+    total += i
+
+print("The sum of all numbers from 0 to 100 is:", total)
+
+sum_even = 0
+sum_odd = 0
+
+for i in range(101):  # 0 to 100
+    if i % 2 == 0:
+        sum_even += i
+    else:
+        sum_odd += i
+
+print("Sum of all even numbers from 0 to 100:", sum_even)
+print("Sum of all odd numbers from 0 to 100:", sum_odd)
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+reversed_fruits = []
+
+for fruit in fruits:
+    reversed_fruits.insert(0, fruit)
+
+print(reversed_fruits)
 ```
 
 ## 🛠️ Setup & Running
