@@ -17,7 +17,7 @@ Welcome to my repository for the **30 Days of Python** challenge! I am documenti
 | **09** | **Conditionals** | ✅  |
 | **10** | **Loops** | ✅ |
 | **11** | **Functions** |✅  |
-| 12 | Modules | ⬜ |
+| **12** | **Modules** | ✅ |
 | 13 | List Comprehension | ⬜ |
 | 14 | Higher Order Functions | ⬜ |
 | 15 | Python Type Errors | ⬜ |
@@ -593,6 +593,52 @@ def solve_quadratic_eqn(a, b, c):
 
     else:
         return "No real solutions"
+```
+
+### Day 12: Modules
+**Topics Covered:**
+
+- Creating a Module
+- Importing a Module
+- Import Functions from a Module
+- Import Functions from a Module and Renaming
+- Import Built-in Modules
+- OS Module
+- Sys Module
+- Statistics Module
+- Math Module
+- String Module
+- Random Module
+
+**Code Snippet:**
+```python
+
+import random
+
+def list_of_hexa_colors(num):
+    hex_colors = []
+    hex_chars = '0123456789abcdef'
+
+    for _ in range(num):
+        color = '#'
+        for _ in range(6):
+            color += random.choice(hex_chars)
+        hex_colors.append(color)
+
+    return hex_colors
+
+import random
+
+def list_of_rgb_colors(num):
+    rgb_colors = []
+
+    for _ in range(num):
+        r = random.randint(0, 255)
+        g = random.randint(0, 255)
+        b = random.randint(0, 255)
+        rgb_colors.append(f"rgb({r},{g},{b})")
+
+    return rgb_colors
 ```
 ## 🛠️ Setup & Running
 
