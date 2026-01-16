@@ -16,7 +16,7 @@ Welcome to my repository for the **30 Days of Python** challenge! I am documenti
 | **08** | **Dictionaries** | ✅ |
 | **09** | **Conditionals** | ✅  |
 | **10** | **Loops** | ✅ |
-| 11 | Functions | ⬜ |
+| **11** | **Functions** |✅  |
 | 12 | Modules | ⬜ |
 | 13 | List Comprehension | ⬜ |
 | 14 | Higher Order Functions | ⬜ |
@@ -553,6 +553,47 @@ for fruit in fruits:
 print(reversed_fruits)
 ```
 
+### Day 11: Functions
+**Topics Covered:**
+
+- Defining a Function
+- Declaring and Calling a Function
+- Function without Parameters
+- Function Returning a Value - Part 1
+- Function with Parameters
+- Passing Arguments with Key and Value
+- Function Returning a Value - Part 2
+- Function with Default Parameters
+- Arbitrary Number of Arguments
+- Default and Arbitrary Number of Parameters in Functions
+- Function as a Parameter of Another Function
+
+**Code Snippet:**
+```python
+
+ef add_all_nums(*nums):
+    total = 0
+    for num in nums:
+        if not isinstance(num, (int, float)):
+            return "Error: all arguments must be numbers"
+        total += num
+    return total
+
+def solve_quadratic_eqn(a, b, c):
+    discriminant = b**2 - 4*a*c
+
+    if discriminant > 0:
+        x1 = (-b + math.sqrt(discriminant)) / (2*a)
+        x2 = (-b - math.sqrt(discriminant)) / (2*a)
+        return (x1, x2)
+
+    elif discriminant == 0:
+        x = -b / (2*a)
+        return (x,)
+
+    else:
+        return "No real solutions"
+```
 ## 🛠️ Setup & Running
 
 To run the code for a specific day:
