@@ -18,7 +18,7 @@ Welcome to my repository for the **30 Days of Python** challenge! I am documenti
 | **10** | **Loops** | ✅ |
 | **11** | **Functions** |✅  |
 | **12** | **Modules** | ✅ |
-| 13 | List Comprehension | ⬜ |
+| **13** | **List Comprehension** | ✅ |
 | 14 | Higher Order Functions | ⬜ |
 | 15 | Python Type Errors | ⬜ |
 | 16 | Python Date time | ⬜ |
@@ -639,6 +639,41 @@ def list_of_rgb_colors(num):
         rgb_colors.append(f"rgb({r},{g},{b})")
 
     return rgb_colors
+```
+
+### Day 13: List comprehension
+**Topics Covered:**
+
+- List Comprehension
+- Lambda Function
+- Creating a Lambda Function
+- Lambda Function Inside Another Function
+
+**Code Snippet:**
+```python
+
+lst = [i for i in language]
+print(type(lst)) # list
+print(lst)       # ['P', 'y', 't', 'h', 'o', 'n']
+
+even_numbers = [i for i in range(21) if i % 2 == 0]
+print(even_numbers)
+
+odd_numbers = [i for i in range(21) if i % 2 != 0]
+print(odd_numbers)
+
+quare = lambda x: x ** 2
+print(square(9))
+
+cube = lambda x : x ** 3
+print(cube(5))
+
+multiple_variables = lambda a, b, c : a **2 + b +8 % c ** 3
+print(multiple_variables(6, 8, 3))
+
+countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
+flattened_list = [letters for row in countries for letters in row]
+print(flattened_list)
 ```
 ## 🛠️ Setup & Running
 
