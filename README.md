@@ -19,8 +19,8 @@ Welcome to my repository for the **30 Days of Python** challenge! I am documenti
 | **11** | **Functions** |✅  |
 | **12** | **Modules** | ✅ |
 | **13** | **List Comprehension** | ✅ |
-| 14 | Higher Order Functions | ⬜ |
-| 15 | Python Type Errors | ⬜ |
+| **14** | **Higher Order Functions** | ✅ |
+| **15** | **Python Type Errors** | ✅ |
 | 16 | Python Date time | ⬜ |
 | 17 | Exception Handling | ⬜ |
 | 18 | Regular Expressions | ⬜ |
@@ -675,6 +675,65 @@ countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', '
 flattened_list = [letters for row in countries for letters in row]
 print(flattened_list)
 ```
+
+### Day 14: Higher order functions
+**Topics Covered:**
+
+- Function as a Parameter
+- Function as a Return Value
+- Python Closures
+- Python Decorators
+- Creating Decorators
+- Applying Multiple Decorators to a Single Function
+- Accepting Parameters in Decorator Functions
+- Built-in Higher Order Functions
+- Python - Map Function
+- Python - Filter Function
+- Python - Reduce Function
+
+**Code Snippet:**
+```python
+def higher_order_function(type): # a higher order function returning a function
+    if type == 'square':
+        return square
+    elif type == 'cube':
+        return cube
+    elif type == 'absolute':
+        return absolute
+
+result = higher_order_function('square')
+print(result(3))       # 9
+result = higher_order_function('cube')
+print(result(3))       # 27
+result = higher_order_function('absolute')
+print(result(-3))      # 3
+
+def uppercase_decorator(function):
+    def wrapper():
+        func = function()
+        make_uppercase = func.upper()
+        return make_uppercase
+    return wrapper
+@uppercase_decorator
+def greeting():
+    return 'Welcome to Python'
+print(greeting())   # WELCOME TO PYTHON
+```
+
+### Day 15: Python type errors
+**Topics Covered:**
+
+- SyntaxError
+- NameError
+- IndexError
+- ModuleNotFoundError
+ -AttributeError
+- KeyError
+- TypeError
+- ImportError
+- ValueError
+- ZeroDivisionError
+
 ## 🛠️ Setup & Running
 
 To run the code for a specific day:
