@@ -21,7 +21,7 @@ Welcome to my repository for the **30 Days of Python** challenge! I am documenti
 | **13** | **List Comprehension** | ✅ |
 | **14** | **Higher Order Functions** | ✅ |
 | **15** | **Python Type Errors** | ✅ |
-| 16 | Python Date time | ⬜ |
+| **16** | **Python Date time** | ✅|
 | 17 | Exception Handling | ⬜ |
 | 18 | Regular Expressions | ⬜ |
 | 19 | File Handling | ⬜ |
@@ -733,6 +733,39 @@ print(greeting())   # WELCOME TO PYTHON
 - ImportError
 - ValueError
 - ZeroDivisionError
+
+### Day 16: Python date time
+**Topics Covered:**
+
+- Getting datetime Information
+- Formatting Date Output Using strftime
+- String to Time Using strptime
+- Using date from datetime
+- Time Objects to Represent Time
+- Difference Between Two Points in Time Using
+- Difference Between Two Points in Time Using timedelta
+
+**Code Snippet:**
+```python
+from datetime import datetime
+now = datetime.now()
+print(now)                      
+day = now.day                   
+month = now.month               
+year = now.year                
+hour = now.hour                 
+minute = now.minute             
+second = now.second
+timestamp = now.timestamp()
+print(day, month, year, hour, minute)
+print('timestamp', timestamp)
+print(f'{day}/{month}/{year}, {hour}:{minute}') 
+
+rom datetime import datetime
+
+epoch = datetime(1970, 1, 1)
+now = datetime.now()
+
 
 ## 🛠️ Setup & Running
 
