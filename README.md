@@ -22,8 +22,8 @@ Welcome to my repository for the **30 Days of Python** challenge! I am documenti
 | **14** | **Higher Order Functions** | ✅ |
 | **15** | **Python Type Errors** | ✅ |
 | **16** | **Python Date time** | ✅|
-| 17 | Exception Handling | ⬜ |
-| 18 | Regular Expressions | ⬜ |
+| **17** | **Exception Handling** |✅  |
+| **18** | **Regular Expressions** | ✅ |
 | 19 | File Handling | ⬜ |
 | 20 | Python Package Manager (PIP) | ⬜ |
 | 21 | Classes and Objects | ⬜ |
@@ -765,7 +765,75 @@ rom datetime import datetime
 
 epoch = datetime(1970, 1, 1)
 now = datetime.now()
+```
 
+### Day 17: Exception handling
+**Topics Covered:**
+-  Exception Handling
+-  Packing and Unpacking Arguments in Python
+-  Unpacking
+-  Unpacking Lists
+-  Unpacking Dictionaries
+-  Packing
+-  Packing Lists
+-  Packing Dictionaries
+- Spreading in Python
+-  Enumerate
+-  Zip
+
+**Code Snippet:**
+```python
+
+try:
+    name = input('Enter your name:')
+    year_born = input('Year you born:')
+    age = 2026 - int(year_born)
+    print(f'You are {name}. And your age is {age}.')
+except TypeError:
+    print('Type error occur')
+except ValueError:
+    print('Value error occur')
+except ZeroDivisionError:
+    print('zero division error occur')
+else:
+    print('I usually run with the try block')
+finally:
+    print('I alway run.')
+```
+
+### Day 18: Regular expressions
+**Topics Covered:**
+
+- The re Module
+- Methods in re Module
+- Match
+- Search
+- Searching for All Matches Using findall
+- Replacing a Substring
+- Splitting Text Using RegEx Split
+- Writing RegEx Patterns
+
+**Code Snippet:**
+```python
+
+import re
+
+paragraph = "I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love."
+
+# find all words
+words = re.findall(r'\b\w+\b', paragraph.lower())
+
+# find frequency using regex only
+most_frequent_word = max(set(words), key=lambda w: len(re.findall(rf'\b{w}\b', paragraph.lower())))
+
+count = len(re.findall(rf'\b{most_frequent_word}\b', paragraph.lower()))
+
+print(most_frequent_word, count)
+
+sentence = '''%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?'''
+cleaned_sentence = re.sub(r'[%$@&#;]', '', sentence)
+print(cleaned_sentence)
+```
 
 ## 🛠️ Setup & Running
 
