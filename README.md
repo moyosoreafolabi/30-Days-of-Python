@@ -24,7 +24,7 @@ Welcome to my repository for the **30 Days of Python** challenge! I am documenti
 | **16** | **Python Date time** | ✅|
 | **17** | **Exception Handling** |✅  |
 | **18** | **Regular Expressions** | ✅ |
-| 19 | File Handling | ⬜ |
+| **19** | **File Handling** | ✅ |
 | 20 | Python Package Manager (PIP) | ⬜ |
 | 21 | Classes and Objects | ⬜ |
 | 22 | Web Scraping | ⬜ |
@@ -833,6 +833,54 @@ print(most_frequent_word, count)
 sentence = '''%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?'''
 cleaned_sentence = re.sub(r'[%$@&#;]', '', sentence)
 print(cleaned_sentence)
+```
+
+### Day 19: File Handling
+**Topics Covered:**
+
+- File Handling
+- Opening Files for Reading
+- Opening Files for Writing and Updating
+- Deleting Files
+- File Types
+- File with txt Extension
+- File with json Extension
+- Changing JSON to Dictionary
+- Changing Dictionary to JSON
+- Saving as JSON File
+- File with csv Extension
+- File with xlsx Extension
+- File with xml Extension
+
+**Code Snippet:**
+```python
+
+import json
+# python dictionary
+person = {
+    "name": "Moyosore",
+    "country": "Nigeria",
+    "city": "Lagos",
+    "skills": ["JavaScrip", "React", "Python"]
+}
+# let's convert it to  json
+person_json = json.dumps(person, indent=4) # indent could be 2, 4, 8. It beautifies the json
+print(type(person_json))
+print(person_json)
+
+import csv
+with open('./files/csv_example.csv') as f:
+    csv_reader = csv.reader(f, delimiter=',') # we use, reader method to read csv
+    line_count = 0
+    for row in csv_reader:
+        if line_count == 0:
+            print(f'Column names are :{", ".join(row)}')
+            line_count += 1
+        else:
+            print(
+                f'\t{row[0]} is a teachers. He lives in {row[1]}, {row[2]}.')
+            line_count += 1
+    print(f'Number of lines:  {line_count}')
 ```
 
 ## 🛠️ Setup & Running
