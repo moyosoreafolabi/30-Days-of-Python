@@ -25,7 +25,7 @@ Welcome to my repository for the **30 Days of Python** challenge! I am documenti
 | **17** | **Exception Handling** |✅  |
 | **18** | **Regular Expressions** | ✅ |
 | **19** | **File Handling** | ✅ |
-| 20 | Python Package Manager (PIP) | ⬜ |
+| **20** | **Python Package Manager (PIP)** | ✅ |
 | 21 | Classes and Objects | ⬜ |
 | 22 | Web Scraping | ⬜ |
 | 23 | Virtual Environment | ⬜ |
@@ -883,6 +883,31 @@ with open('./files/csv_example.csv') as f:
     print(f'Number of lines:  {line_count}')
 ```
 
+### Day 20: Python package manager
+**Topics Covered:**
+
+- What is PIP ?
+- Installing PIP
+- Installing packages using pip
+- Uninstalling Packages
+- List of Packages
+- Show Package
+- PIP Freeze
+- Reading from URL
+- Creating a Package
+- Further Information About Packages
+
+**Code Snippet:**
+```python
+
+import requests
+url = 'https://restcountries.eu/rest/v2/all'  # countries api
+response = requests.get(url)  # opening a network and fetching a data
+print(response) # response object
+print(response.status_code)  # status code, success:200
+countries = response.json()
+print(countries[1])  
+```
 ## 🛠️ Setup & Running
 
 To run the code for a specific day:
