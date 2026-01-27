@@ -27,7 +27,7 @@ Welcome to my repository for the **30 Days of Python** challenge! I am documenti
 | **19** | **File Handling** | ✅ |
 | **20** | **Python Package Manager (PIP)** | ✅ |
 | **21** | **Classes and Objects** | ✅ |
-| 22 | Web Scraping | ⬜ |
+| **22** | **Web Scraping** | ✅ |
 | 23 | Virtual Environment | ⬜ |
 | 24 | Statistics | ⬜ |
 | 25 | Pandas | ⬜ |
