@@ -25,8 +25,8 @@ Welcome to my repository for the **30 Days of Python** challenge! I am documenti
 | **17** | **Exception Handling** |✅  |
 | **18** | **Regular Expressions** | ✅ |
 | **19** | **File Handling** | ✅ |
-| 20 | Python Package Manager (PIP) | ⬜ |
-| 21 | Classes and Objects | ⬜ |
+| **20** | **Python Package Manager (PIP)** | ✅ |
+| **21** | **Classes and Objects** | ✅ |
 | 22 | Web Scraping | ⬜ |
 | 23 | Virtual Environment | ⬜ |
 | 24 | Statistics | ⬜ |
@@ -883,6 +883,83 @@ with open('./files/csv_example.csv') as f:
     print(f'Number of lines:  {line_count}')
 ```
 
+### Day 20: Python package manager
+**Topics Covered:**
+
+- What is PIP ?
+- Installing PIP
+- Installing packages using pip
+- Uninstalling Packages
+- List of Packages
+- Show Package
+- PIP Freeze
+- Reading from URL
+- Creating a Package
+- Further Information About Packages
+
+**Code Snippet:**
+```python
+
+import requests
+url = 'https://restcountries.eu/rest/v2/all'  # countries api
+response = requests.get(url)  # opening a network and fetching a data
+print(response) # response object
+print(response.status_code)  # status code, success:200
+countries = response.json()
+print(countries[1])  
+```
+
+### Day 21: Classes and objects
+**Topics Covered:**
+
+- Creating a Class
+- Creating an Object
+- Class Constructor
+- Object Methods
+- Object Default Methods
+- Method to Modify Class Default Values
+- Inheritance
+- Overriding parent method
+
+**Code Snippet:**
+```python
+
+class PersonAccount:
+    def __init__(self, firstname, lastname):
+        self.firstname = firstname
+        self.lastname = lastname
+        self.incomes = {}   # {description: amount}
+        self.expenses = {}  # {description: amount}
+
+    def add_income(self, description, amount):
+        if amount < 0:
+            raise ValueError("Income amount cannot be negative")
+        self.incomes[description] = self.incomes.get(description, 0) + amount
+
+    def add_expense(self, description, amount):
+        if amount < 0:
+            raise ValueError("Expense amount cannot be negative")
+        self.expenses[description] = self.expenses.get(description, 0) + amount
+
+    def total_income(self):
+        return sum(self.incomes.values())
+
+    def total_expense(self):
+        return sum(self.expenses.values())
+
+    def account_balance(self):
+        return self.total_income() - self.total_expense()
+
+    def account_info(self):
+        return {
+            "Full Name": f"{self.firstname} {self.lastname}",
+            "Total Income": self.total_income(),
+            "Total Expense": self.total_expense(),
+            "Account Balance": self.account_balance(),
+            "Incomes": self.incomes,
+            "Expenses": self.expenses
+        }
+```
 ## 🛠️ Setup & Running
 
 To run the code for a specific day:
