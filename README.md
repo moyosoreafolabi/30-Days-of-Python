@@ -27,8 +27,8 @@ Welcome to my repository for the **30 Days of Python** challenge! I am documenti
 | **19** | **File Handling** | ✅ |
 | **20** | **Python Package Manager (PIP)** | ✅ |
 | **21** | **Classes and Objects** | ✅ |
-| 22 | Web Scraping | ⬜ |
-| 23 | Virtual Environment | ⬜ |
+| **22** | **Web Scraping** | ✅ |
+| **23** | **Virtual Environment** | ✅ |
 | 24 | Statistics | ⬜ |
 | 25 | Pandas | ⬜ |
 | 26 | Python for Web (Flask/Django) | ⬜ |
@@ -960,6 +960,40 @@ class PersonAccount:
             "Expenses": self.expenses
         }
 ```
+
+### Day 22: Web scraping
+**Topics Covered:**
+
+- Python Web Scraping
+- What is Web Scrapping
+
+**Code Snippet:**
+```python
+
+import requests
+from bs4 import BeautifulSoup
+url = 'http://www.bu.edu/president/boston-university-facts-stats/'
+response = requests.get(url)
+content = response.content # we get all the content from the website
+soup = BeautifulSoup(content, 'html.parser') # beautiful soup will give a chance to parse
+print(soup.title) # <title>UCI Machine Learning Repository: Data Sets</title>
+print(soup.title.get_text()) # UCI Machine Learning Repository: Data Sets
+print(soup.body) # gives the whole page on the website
+print(response.status_code)
+
+tables = soup.find_all('table', {'cellpadding':'3'})
+# We are targeting the table with cellpadding attribute with the value of 3
+# We can select using id, class or HTML tag , for more information check the beautifulsoup doc
+table = tables[0] # the result is a list, we are taking out data from it
+for td in table.find('tr').find_all('td'):
+    print(td.text)
+```
+
+### Day 23: Virtual environment
+**Topics Covered:**
+
+- Setting up Virtual Environments
+
 ## 🛠️ Setup & Running
 
 To run the code for a specific day:
