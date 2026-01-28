@@ -28,7 +28,7 @@ Welcome to my repository for the **30 Days of Python** challenge! I am documenti
 | **20** | **Python Package Manager (PIP)** | ✅ |
 | **21** | **Classes and Objects** | ✅ |
 | **22** | **Web Scraping** | ✅ |
-| 23 | Virtual Environment | ⬜ |
+| **23** | **Virtual Environment** | ✅ |
 | 24 | Statistics | ⬜ |
 | 25 | Pandas | ⬜ |
 | 26 | Python for Web (Flask/Django) | ⬜ |
@@ -988,6 +988,12 @@ table = tables[0] # the result is a list, we are taking out data from it
 for td in table.find('tr').find_all('td'):
     print(td.text)
 ```
+
+### Day 23: Virtual environment
+**Topics Covered:**
+
+- Setting up Virtual Environments
+
 ## 🛠️ Setup & Running
 
 To run the code for a specific day:
