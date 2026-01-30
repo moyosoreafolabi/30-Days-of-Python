@@ -994,6 +994,41 @@ for td in table.find('tr').find_all('td'):
 
 - Setting up Virtual Environments
 
+### Day 24: Statistics
+**Topics Covered:**
+
+- Python for Statistical Analysis
+- Statistics
+- Data
+- Statistics Module
+- NumPy
+
+**Code Snippet:**
+```python
+
+random_int = np.random.randint(2,10, size=(3,3))
+random_int
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.set()
+plt.hist(normal_array, color="grey", bins=50)
+
+np.asarray(four_by_four_matrix)[2] = 2
+four_by_four_matrix
+
+from scipy import stats
+np_normal_dis = np.random.normal(5, 0.5, 1000) # mean, standard deviation, number of samples
+np_normal_dis
+## min, max, mean, median, sd
+print('min: ', np.min(np_normal_dis))
+print('max: ', np.max(np_normal_dis))
+print('mean: ', np.mean(np_normal_dis))
+print('median: ', np.median(np_normal_dis))
+print('mode: ', stats.mode(np_normal_dis))
+print('sd: ', np.std(np_normal_dis))
+```
+
 ## 🛠️ Setup & Running
 
 To run the code for a specific day:
