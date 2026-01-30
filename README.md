@@ -29,7 +29,7 @@ Welcome to my repository for the **30 Days of Python** challenge! I am documenti
 | **21** | **Classes and Objects** | ✅ |
 | **22** | **Web Scraping** | ✅ |
 | **23** | **Virtual Environment** | ✅ |
-| 24 | Statistics | ⬜ |
+| **24** | **Statistics** | ✅ |
 | 25 | Pandas | ⬜ |
 | 26 | Python for Web (Flask/Django) | ⬜ |
 | 27 | Python with MongoDB | ⬜ |
