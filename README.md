@@ -30,7 +30,7 @@ Welcome to my repository for the **30 Days of Python** challenge! I am documenti
 | **22** | **Web Scraping** | ✅ |
 | **23** | **Virtual Environment** | ✅ |
 | **24** | **Statistics** | ✅ |
-| 25 | Pandas | ⬜ |
+| **25** | **Pandas** | ✅ |
 | 26 | Python for Web (Flask/Django) | ⬜ |
 | 27 | Python with MongoDB | ⬜ |
 | 28 | API | ⬜ |
@@ -1006,9 +1006,6 @@ for td in table.find('tr').find_all('td'):
 **Code Snippet:**
 ```python
 
-random_int = np.random.randint(2,10, size=(3,3))
-random_int
-
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set()
@@ -1027,6 +1024,45 @@ print('mean: ', np.mean(np_normal_dis))
 print('median: ', np.median(np_normal_dis))
 print('mode: ', stats.mode(np_normal_dis))
 print('sd: ', np.std(np_normal_dis))
+```
+### Day 25: Pandas
+**Topics Covered:**
+- Installing Pandas
+- Importing Pandas
+- Creating Pandas Series with Default Index
+- Creating Pandas Series with custom index
+- Creating Pandas Series from a Dictionary
+- Creating a Constant Pandas Series
+- Creating a Pandas Series Using Linspace
+- DataFrames
+- Creating DataFrames from List of Lists
+- Creating DataFrame Using Dictionary
+- Creating DataFrames from a List of Dictionaries
+- Reading CSV File Using Pandas
+- Data Exploration
+- Modifying a DataFrame
+- Creating a DataFrame
+- Adding a New Column
+- Modifying column values
+
+**Code Snippet:**
+```python
+
+# creating Panda series from a dictionary
+dct = {'name':'Moyosore','country':'Nigeria','city':'Lagos'}
+s = pd.Series(dct)
+print(s)
+
+s = pd.Series(10, index = [1, 2, 3])
+print(s)
+
+data = [
+    ['Moyosore', 'Nigeria', 'Nigeria'],
+    ['David', 'UK', 'London'],
+    ['John', 'Sweden', 'Stockholm']
+]
+df = pd.DataFrame(data, columns=['Names','Country','City'])
+print(df)
 ```
 
 ## 🛠️ Setup & Running
